@@ -3,55 +3,43 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ratnikov WP</title>
+		<title>Главная | Медико-психологический центр доктора Корниенко</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
 		/>
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__line header__line--black">
-				<div class="header__line-inner cg-0 container">
-					<p class="header__line__text">
-						We’re a Complete Building Maintenance Company
-					</p>
-					<a href="/" class="header__line__link"> Services </a>
-					<a href="/" class="header__line__link"> Contact Us </a>
-					<a href="/" class="header__line__link">
-						<img src="assets/icons/search.svg" alt="" />
-					</a>
-				</div>
-			</div>
 			<div class="header__line header__line--top">
 				<div class="header__line-inner container">
-					<img class="header__logo" src="assets/images/logo.svg" alt="logo" />
-					<a href="tel:+79999999999" class="header__phone">
-						<span class="header__phone-icon">
-							<img src="assets/icons/phone.svg" alt="phone" />
-						</span>
-						<span class="header__phone-text">(999) 999-99-99</span>
+					<a href="/" class="header__logo-wrapper">
+						<img class="header__logo" src="assets/images/logo.png" alt="Логотип сайта" />
+						<p class="header__logo-text">
+							Медико-психологический <br />
+							центр Доктора Корниенко
+						</p>
 					</a>
-					<a href="tel:+79999999999" class="header__phone">
+					<a href="tel:+73952225550" class="header__phone">
 						<span class="header__phone-icon">
-							<img src="assets/icons/phone.svg" alt="phone" />
+							<img src="assets/icons/phone.svg" alt="иконка телефон" />
 						</span>
-						<span class="header__phone-text">(999) 999-99-99</span>
+						<span class="header__phone-text">+7 (3952) 22‒55‒50</span>
 					</a>
 					<div class="header__info ml-auto">
-						<img src="assets/icons/planet.svg" alt="" />
+						<img src="assets/icons/planet.svg" alt="иконка планета" />
 						<span class="header__info__text">
-							DHCC Bldg 39, 39, Ibn <br />
-							Seena Street
+							Байкальская улица 102, <br />
+							1 этаж
 						</span>
 					</div>
 					<div class="header__info">
-						<img src="assets/icons/clock.svg" alt="" />
+						<img src="assets/icons/clock.svg" alt="иконка часы" />
 						<span class="header__info__text">
-							Monday / Friday: <br />
-							08:00 am - 05:00 pm
+							Вторник / Суббота: <br />
+							10:00 - 17:00
 						</span>
 					</div>
 					<div class="header-burger__wrapper">
@@ -63,10 +51,25 @@
 						<nav class="burger-menu__nav hide">
 							<ul class="burger-menu__list">
 								<li>
-									<a href="">имплантация</a>
+									<a href="/about">О нас</a>
 								</li>
 								<li>
-									<a href="">протезирование</a>
+									<a href="/specialists">Наши специалисты</a>
+								</li>
+								<li>
+									<a href="/services">Услуги</a>
+								</li>
+								<li>
+									<a href="/info">Информация</a>
+								</li>
+								<li>
+									<a href="/documents">Документы</a>
+								</li>
+								<li>
+									<a href="/control">Надзорные органы</a>
+								</li>
+								<li>
+									<a href="/contacts">Контакты</a>
 								</li>
 							</ul>
 						</nav>
@@ -76,540 +79,112 @@
 			<div class="header__line header__line--bottom">
 				<div class="header__line-inner container">
 					<nav class="nav">
-						<a href="/" class="nav__link">About</a>
-						<a href="/" class="nav__link">Services</a>
-						<a href="/" class="nav__link">Blog</a>
-						<a href="/" class="nav__link">Contact Us</a>
+						<a href="/about" class="nav__link">О нас</a>
+						<a href="/specialists" class="nav__link">Наши специалисты</a>
+						<a href="/services" class="nav__link">Услуги</a>
+						<a href="/licenses" class="nav__link">Лицензии</a>
+						<a href="/info" class="nav__link">Информация</a>
+						<a href="/documents" class="nav__link">Документы</a>
+						<a href="/control" class="nav__link">Надзорные органы</a>
 					</nav>
-					<button class="my-button nav__button">Request Estimate</button>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="hero">
-				<img class="hero__img" src="assets/images/bg-hero.jpg" alt="hero" />
-				<h1 class="hero__title">
-					Your universal comprehensive service <br />
-					company
-				</h1>
-				<div class="hero__btns">
-					<button class="my-button hero__btn">All Services</button>
-					<button class="my-button my-button--transparent hero__btn">
-						Get in Touch
-					</button>
+			<section class="hero container">
+				<div class="hero__img">
+					<img src="/assets/images/doctor_main.webp" alt="Фотография доктора корниенко" />
 				</div>
-			</section>
-			<section class="info">
-				<div class="container info__wrapper">
-					<div class="info-item">
-						<div class="info-item__icon">
-							<img src="assets/icons/info/adv-icon1.svg" alt="" />
-						</div>
-						<div class="info-item__title">Contact & Partner</div>
-						<p class="info-item__text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt
-						</p>
-						<a href="/" class="info-item__link">Contact Us</a>
-					</div>
-					<div class="info-item">
-						<div class="info-item__icon">
-							<img src="assets/icons/info/adv-icon2.svg" alt="" />
-						</div>
-						<div class="info-item__title">Contact & Partner</div>
-						<p class="info-item__text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt
-						</p>
-						<a href="/" class="info-item__link">Contact Us</a>
-					</div>
-					<div class="info-item">
-						<div class="info-item__icon">
-							<img src="assets/icons/info/adv-icon3.svg" alt="" />
-						</div>
-						<div class="info-item__title">Contact & Partner</div>
-						<p class="info-item__text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt
-						</p>
-						<a href="/" class="info-item__link">Contact Us</a>
-					</div>
-					<div class="info-item">
-						<div class="info-item__icon">
-							<img src="assets/icons/info/adv-icon4.svg" alt="" />
-						</div>
-						<div class="info-item__title">Contact & Partner</div>
-						<p class="info-item__text">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-							nonumy eirmod tempor invidunt
-						</p>
-						<a href="/" class="info-item__link">Contact Us</a>
-					</div>
-				</div>
-			</section>
-			<section class="services">
-				<div class="container services__wrapper">
-					<div class="service-card">
-						<img
-							class="service-card__img"
-							src="assets/images/service.jpg"
-							alt=""
-						/>
-						<div class="service-card__content">
-							<div class="service-card__title">Window Care Solutions</div>
-							<p class="service-card__text">
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-								diam nonumy eirmod tempor invidunt
-							</p>
-							<a href="/" class="my-button service-card__link"
-								>View Service ></a
-							>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="projects">
-				<div class="container">
-					<h3 class="suptitle projects__suptitle">
-						FGTS a commercial complex building maintenance company
-					</h3>
-					<h2 class="title projects__title">
-						Let us Take Care of Your Building
-					</h2>
-					<div class="projects__thumbs">
-						<div class="projects-thumb">
-							<img src="assets/images/projects.jpg" alt="" />
-						</div>
-						<div class="projects-thumb">
-							<img src="assets/images/projects.jpg" alt="" />
-						</div>
-						<div class="projects-thumb">
-							<img src="assets/images/projects.jpg" alt="" />
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="advantages">
-				<div class="container">
-					<div class="advantages__flex">
-						<div class="advantages__content">
-							<h3 class="suptitle">FGTS - building maintenance company</h3>
-							<h2 class="title advantages__title">Our advantages</h2>
-							<p class="advantages__text">
-								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-								diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet,
-								consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-								invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing
-								elitr, sed diam nonumy eirmod tempor invidunt.
-							</p>
-						</div>
-						<div class="advantages__image">
-							<img src="assets/images/bg-hero.jpg" alt="" />
-						</div>
-					</div>
-					<div class="advantages__wrapper">
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
-								<img src="assets/icons/advantages/adv1.svg" alt="" />
-							</div>
-							<div class="advantages-item__content">
-								<div class="advantages-item__title">
-									Innovations & Monitoring
-								</div>
-								<p class="advantages-item__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit
-									amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-									tempor invidunt.
-								</p>
-							</div>
-						</div>
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
-								<img src="assets/icons/advantages/adv2.svg" alt="" />
-							</div>
-							<div class="advantages-item__content">
-								<div class="advantages-item__title">
-									Innovations & Monitoring
-								</div>
-								<p class="advantages-item__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit
-									amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-									tempor invidunt.
-								</p>
-							</div>
-						</div>
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
-								<img src="assets/icons/advantages/adv3.svg" alt="" />
-							</div>
-							<div class="advantages-item__content">
-								<div class="advantages-item__title">
-									Innovations & Monitoring
-								</div>
-								<p class="advantages-item__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit
-									amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-									tempor invidunt.
-								</p>
-							</div>
-						</div>
-						<div class="advantages-item">
-							<div class="advantages-item__icon">
-								<img src="assets/icons/advantages/adv4.svg" alt="" />
-							</div>
-							<div class="advantages-item__content">
-								<div class="advantages-item__title">
-									Innovations & Monitoring
-								</div>
-								<p class="advantages-item__text">
-									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-									diam nonumy eirmod tempor invidunt. Lorem ipsum dolor sit
-									amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-									tempor invidunt.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="hero form-banner">
-				<img class="hero__img" src="assets/images/bg-hero.jpg" alt="hero" />
-				<h1 class="hero__title">
-					Thanks to xx years of experience and xxxx qualified specialists,
-					<br />
-					You can trust us completely.
-				</h1>
-				<div class="hero__btns">
-					<button class="my-button hero__btn">Send a Message</button>
-				</div>
-			</section>
-			<section class="news">
-				<div class="container">
-					<div class="news-head">
-						<div>
-							<h3 class="suptitle">Insights & Stories</h3>
-							<h2 class="title">Latest News</h2>
-						</div>
-						<div class="news-head__btns">
-							<button class="news-head__btn news-head__btn--prev">
-								<img src="assets/icons/arrow.svg" alt="" />
-							</button>
-							<button class="news-head__btn news-head__btn--next">
-								<img src="assets/icons/arrow.svg" alt="" />
-							</button>
-						</div>
-					</div>
-					<div class="swiper news-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="news-item">
-									<div class="news-item__img">
-										<img src="assets/images/bg-hero.jpg" alt="" />
-										<div class="news-item__date">February 28, 2025</div>
-									</div>
-									<div class="news-item__content">
-										<div class="news-item__title">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</div>
-										<p class="news-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</p>
-										<a href="/" class="info-item__link news-item__link"
-											>Read More</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="news-item">
-									<div class="news-item__img">
-										<img src="assets/images/bg-hero.jpg" alt="" />
-										<div class="news-item__date">February 28, 2025</div>
-									</div>
-									<div class="news-item__content">
-										<div class="news-item__title">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</div>
-										<p class="news-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</p>
-										<a href="/" class="info-item__link news-item__link"
-											>Read More</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="news-item">
-									<div class="news-item__img">
-										<img src="assets/images/bg-hero.jpg" alt="" />
-										<div class="news-item__date">February 28, 2025</div>
-									</div>
-									<div class="news-item__content">
-										<div class="news-item__title">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</div>
-										<p class="news-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</p>
-										<a href="/" class="info-item__link news-item__link"
-											>Read More</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="news-item">
-									<div class="news-item__img">
-										<img src="assets/images/bg-hero.jpg" alt="" />
-										<div class="news-item__date">February 28, 2025</div>
-									</div>
-									<div class="news-item__content">
-										<div class="news-item__title">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</div>
-										<p class="news-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</p>
-										<a href="/" class="info-item__link news-item__link"
-											>Read More</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="news-item">
-									<div class="news-item__img">
-										<img src="assets/images/bg-hero.jpg" alt="" />
-										<div class="news-item__date">February 28, 2025</div>
-									</div>
-									<div class="news-item__content">
-										<div class="news-item__title">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</div>
-										<p class="news-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam nonumy eirmod tempor invidunt
-										</p>
-										<a href="/" class="info-item__link news-item__link"
-											>Read More</a
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="help">
-				<div class="container">
-					<div class="help__flex">
-						<div class="help__content">
-							<h3 class="suptitle help__suptitle">Get in Touch</h3>
-							<h2 class="title help__title">
-								How Can <br />
-								We Help You?
-							</h2>
-							<p class="help__text">
-								Enter your details in the form and your message will be
-								dispatched directly to our staff who will get in touch with you
-								as soon as they can
-							</p>
-						</div>
-						<form action="/" class="help-form">
-							<div class="help-form__row">
-								<input type="text" placeholder="First Name*" />
-								<input type="text" placeholder="Last Name*" />
-							</div>
-							<div class="help-form__row">
-								<input type="text" placeholder="Company Name" />
-								<input type="text" placeholder="Email*" />
-							</div>
-							<input type="tel" placeholder="Phone*" />
-							<textarea name="" id="" placeholder="Message"></textarea>
-							<button type="submit" class="my-button help-form__btn">
-								Submit
-							</button>
-						</form>
-					</div>
-				</div>
-			</section>
-			<section class="testimonials">
-				<div class="container">
-					<div class="news-head">
-						<div>
-							<h3 class="suptitle">What Clients Says</h3>
-							<h2 class="title">Client Testimonials</h2>
-						</div>
-						<div class="news-head__btns">
-							<button class="news-head__btn testimonials-head__btn--prev">
-								<img src="assets/icons/arrow.svg" alt="" />
-							</button>
-							<button class="news-head__btn testimonials-head__btn--next">
-								<img src="assets/icons/arrow.svg" alt="" />
-							</button>
-						</div>
-					</div>
-					<div class="swiper testimonials-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="testimonials-item">
-									<div class="testimonials-item__wrapper">
-										<div class="testimonials-item__title">
-											Health and Safety Manager
-										</div>
-										<div class="testimonials-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam/ Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr.
-										</div>
-									</div>
-									<div class="testimonials-item__author">Sarah Mitchell</div>
-									<div class="testimonials-item__prof">
-										Health and Safety Manager
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="testimonials-item">
-									<div class="testimonials-item__wrapper">
-										<div class="testimonials-item__title">
-											Health and Safety Manager
-										</div>
-										<div class="testimonials-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam/ Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr.
-										</div>
-									</div>
-									<div class="testimonials-item__author">Sarah Mitchell</div>
-									<div class="testimonials-item__prof">
-										Health and Safety Manager
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="testimonials-item">
-									<div class="testimonials-item__wrapper">
-										<div class="testimonials-item__title">
-											Health and Safety Manager
-										</div>
-										<div class="testimonials-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam/ Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr.
-										</div>
-									</div>
-									<div class="testimonials-item__author">Sarah Mitchell</div>
-									<div class="testimonials-item__prof">
-										Health and Safety Manager
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="testimonials-item">
-									<div class="testimonials-item__wrapper">
-										<div class="testimonials-item__title">
-											Health and Safety Manager
-										</div>
-										<div class="testimonials-item__text">
-											Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-											sed diam/ Lorem ipsum dolor sit amet, consetetur
-											sadipscing elitr.
-										</div>
-									</div>
-									<div class="testimonials-item__author">Sarah Mitchell</div>
-									<div class="testimonials-item__prof">
-										Health and Safety Manager
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="hero__content">
+					<h1 class="hero__title">Медико-психологический центр доктора Корниенко В.Н.</h1>
+					<p class="hero__text">Основные направления деятельности:</p>
+					<p class="hero__text">
+						<b>Психотерапия</b> <br />
+						С 2004г «Медико-психологический центр» обеспечивает высококвалифицированную помощь
+						населению города Иркутска и Иркутской области по всему спектру психических расстройств,
+						в том числе психотерапия.
+					</p>
+					<p class="hero__text">
+						Наш Центр оказывает психотерапевтическую помощь взрослым. <br />
+						<b>Состояния</b>, при которых Вы можете обратиться к нам за помощью: депрессия, тревога,
+						бессонница, панические атаки, невротические и психосоматические расстройства,
+						алкогольная зависимость.
+					</p>
+					<p class="hero__text">
+						Мы проводим психиатрическую диагностику, имеем право назначать медикаментозное лечение и
+						оказывать амбулаторное сопровождение пациентов, при необходимости можем выписать
+						направление на стационарную госпитализацию.
+					</p>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
 			<div class="container footer__wrapper">
 				<div class="footer-col">
-					<div class="footer__title">Commercial Building Maintenance Corp.</div>
+					<div class="footer__title">Медико-психологический центр Доктора Корниенко</div>
 					<div class="footer__text">
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-						nonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet,
-						consetetur Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-						sed diam nonumy eirmod tempor invidunt.
+						Общество с ограниченной ответственностью «Байкальский Медицинский Легион» <br />
+						Режим работы: ВТ-СБ с 10.00 до 17.00, ВС - ПН выходной <br />
+						тел. <a class="footer__text-link" href="tel:+73952255550">+7 (3952) 22‒55‒50</a>, <br />
+						<a class="footer__text-link" href="tel:+79025114606">+7-902-511-46-06</a>, <br />
+						Электронная почта:
+						<a class="footer__text-link" href="mailto:aakornienko@yandex.ru"
+							>ааkornienko@yandex.ru</a
+						>
+						<br />
+						Фактический адрес: 664022, г. Иркутск, ул. Байкальская, 102
 					</div>
 				</div>
 				<div class="footer-col">
-					<div class="footer__title">Quick Navigation</div>
+					<div class="footer__title">Основные разделы</div>
 					<ul class="footer__list footer-nav">
-						<li><a class="footer__link" href="/">Home</a></li>
-						<li><a class="footer__link" href="/">About</a></li>
-						<li><a class="footer__link" href="/">Services</a></li>
-						<li><a class="footer__link" href="/">News</a></li>
-						<li><a class="footer__link" href="/">Contact</a></li>
+						<li><a class="footer__link" href="/">Главная</a></li>
+						<li><a class="footer__link" href="/">О нас</a></li>
+						<li><a class="footer__link" href="/">Наши специалисты</a></li>
+						<li><a class="footer__link" href="/">Услуги</a></li>
+						<li><a class="footer__link" href="/">Информация</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
-					<div class="footer__title">Contact Details</div>
+					<div class="footer__title">Контакты</div>
 					<ul class="footer__list">
 						<li>
-							<img
-								class="footer__icon"
-								src="assets/icons/location.svg"
-								alt=""
-							/>
+							<img class="footer__icon" src="assets/icons/location.svg" alt="иконка локация" />
 							<div class="footer__text">
-								<a href="/">DHCC Bldg 39, 39, Ibn Seena Street</a>
+								<a href="/">г. Иркутск, ул. Байкальская 102, 1 этаж</a>
 							</div>
 						</li>
 						<li>
-							<img class="footer__icon" src="assets/icons/mobile.svg" alt="" />
+							<img class="footer__icon" src="assets/icons/mobile.svg" alt="иконка телефон" />
 							<div class="footer__text">
-								<a href="tel:+1234567890">(900) 000-0900</a>
-								<span class="footer__text--small">Available 24/7</span>
+								<a class="footer__text-link" href="tel:+73952255550">+7 (3952) 22‒55‒50</a>
 							</div>
 						</li>
 						<li>
-							<img class="footer__icon" src="assets/icons/mobile.svg" alt="" />
+							<img class="footer__icon" src="assets/icons/mobile.svg" alt="иконка телефон" />
 							<div class="footer__text">
-								<a href="tel:+1234567890">(900) 000-0900</a>
-								<span class="footer__text--small">Available 24/7</span>
+								<a class="footer__text-link" href="tel:+79025114606">+7-902-511-46-06</a>
 							</div>
 						</li>
 						<li>
-							<img class="footer__icon" src="assets/icons/email.svg" alt="" />
+							<img class="footer__icon" src="assets/icons/email.svg" alt="иконка почта" />
 							<div class="footer__text">
-								<a href="mailto:info@fgts.net">info@fgts.net</a>
+								<a class="footer__text-link" href="mailto:aakornienko@yandex.ru"
+									>ааkornienko@yandex.ru</a
+								>
 							</div>
 						</li>
 					</ul>
 				</div>
 				<div class="footer-col h-full">
-					<div class="footer__title">Working Hours</div>
+					<div class="footer__title">Часы работы</div>
 					<ul class="footer__list footer-nav">
-						<li>
-							<span class="footer__text">Monday – Friday</span> 08:00 am – 05:00
-							pm
-						</li>
+						<li><span class="footer__text">Вторник – Суббота</span> 10:00 – 17:00</li>
 					</ul>
-					<img
-						class="footer__logo"
-						src="assets/images/footer-logo.svg"
-						alt=""
-					/>
+					<a href="/#" class="footer__logo-wrapper">
+						<img class="footer__logo" src="assets/images/logo.png" alt="Логотип сайта" />
+						<p class="footer__logo-text">Медико-психологический центр Доктора Корниенко</p>
+					</a>
 				</div>
 			</div>
 			<a href="#" class="footer__arrow">
@@ -628,7 +203,7 @@
 			</a>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
