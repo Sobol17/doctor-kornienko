@@ -352,11 +352,93 @@ section {
 
 .specialists__specs p {
 	border-bottom: 1px solid var(--secondary);
-
 	padding: 10px 0px;
 }
 
+.specialists__diplomas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 24px;
+}
+
+.specialists__diplomas-item {
+	flex: 0 1 calc(25% - 20px);
+	background-color: var(--secondary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border-radius: 12px;
+}
+
+/* INFO */
+
+.info a {
+	text-decoration: underline;
+}
+
+.map {
+	margin-top: 32px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* LICENSES */
+.licenses__link {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	text-decoration: underline;
+	border-bottom: 1px solid var(--secondary);
+	padding-bottom: 20px;
+}
+
+.licenses__link:last-child {
+	border-bottom: none;
+}
+
+.licenses__links {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	margin-top: 32px;
+}
+
+/* CONTROL */
+
+.control__items {
+	margin-top: 40px;
+	display: flex;
+	row-gap: 20px;
+	flex-direction: column;
+}
+
+.control__item {
+	display: flex;
+	column-gap: 24px;
+	align-items: center;
+	font-size: 16px;
+}
+
+.control__item:hover .control__item-text {
+	text-decoration: underline;
+}
+
+.control__item-img {
+	width: 60px;
+	height: 60px;
+}
+
+#specialButton {
+	color: var(--white);
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
 /* FOOTER */
+
 .footer {
 	background: url('../assets/images/footer-bg.png') no-repeat center / cover var(--primary);
 	padding: 90px 0px;
@@ -624,6 +706,10 @@ th {
 }
 
 @media (max-width: 768px) {
+	.specialists__diplomas-item {
+		flex: 0 1 calc(50% - 20px);
+		padding: 12px;
+	}
 	th,
 	td {
 		font-size: 14px;
